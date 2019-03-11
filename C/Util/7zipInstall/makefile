@@ -1,4 +1,5 @@
 PROG = 7zipInstall.exe
+MY_FIXED = 1
 
 !IFDEF _64BIT_INSTALLER
 CFLAGS = $(CFLAGS) -D_64BIT_INSTALLER
@@ -25,6 +26,7 @@ C_OBJS = \
   $O\7zStream.obj \
   $O\Bcj2.obj \
   $O\CpuArch.obj \
+  $O\DllSecur.obj \
   $O\LzmaDec.obj \
 
 OBJS = \
